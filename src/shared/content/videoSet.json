@@ -1,0 +1,64 @@
+{
+  "pt": {
+    "title": "VIDEOS SET",
+    "subtitle": "",
+    "playLabel": "Abrir video",
+    "closeLabel": "Fechar",
+    "ctaLabel": "VER MAIS",
+    "ctaHref": "https://drive.google.com/drive/folders/1jZHU2_YuyQnM192yrriJGlYQms1jBm_H",
+    "emptyLabel": "Nenhum short encontrado no Supabase. Ajuste a policy de leitura da tabela `shorts` ou mantenha os itens locais.",
+    "items": [
+      {
+        "id": "warehouse-cut",
+        "title": "Warehouse Cut",
+        "description": "Set noturno com linguagem crua, groove seco e leitura de pista para horarios de densidade.",
+        "platform": "YouTube",
+        "duration": "32 min",
+        "thumbnailSrc": "/assets/video-thumb-01.svg",
+        "thumbnailAlt": "Thumbnail de set com luzes roxas e azuladas em ambiente escuro",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ScMzIvxBSi4"
+      },
+      {
+        "id": "club-session",
+        "title": "Club Session",
+        "description": "Recorte focado em transicoes limpas, atmosfera hipnotica e energia de pista em progressao.",
+        "platform": "YouTube",
+        "duration": "41 min",
+        "thumbnailSrc": "/assets/video-thumb-02.svg",
+        "thumbnailAlt": "Thumbnail de set com cabine iluminada por neon rosa e azul",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/tgbNymZ7vqY"
+      }
+    ]
+  },
+  "en": {
+    "title": "VIDEO SET",
+    "subtitle": "Two strong visual cuts to present narrative, dance-floor pressure and booth presence.",
+    "playLabel": "Open video",
+    "closeLabel": "Close",
+    "ctaLabel": "SEE MORE",
+    "ctaHref": "https://drive.google.com/drive/folders/1jZHU2_YuyQnM192yrriJGlYQms1jBm_H",
+    "emptyLabel": "No shorts found in Supabase. Adjust the read policy for the `shorts` table or keep the local fallback items.",
+    "items": [
+      {
+        "id": "warehouse-cut",
+        "title": "Warehouse Cut",
+        "description": "A late-night set with a raw language, dry groove and dance-floor reading for dense time slots.",
+        "platform": "YouTube",
+        "duration": "32 min",
+        "thumbnailSrc": "/assets/video-thumb-01.svg",
+        "thumbnailAlt": "Set thumbnail with purple and blue lights in a dark environment",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ScMzIvxBSi4"
+      },
+      {
+        "id": "club-session",
+        "title": "Club Session",
+        "description": "A cut focused on clean transitions, hypnotic atmosphere and steadily rising dance-floor energy.",
+        "platform": "YouTube",
+        "duration": "41 min",
+        "thumbnailSrc": "/assets/video-thumb-02.svg",
+        "thumbnailAlt": "Set thumbnail with a booth lit by pink and blue neon",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/tgbNymZ7vqY"
+      }
+    ]
+  }
+}

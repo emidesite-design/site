@@ -1,0 +1,78 @@
+{
+  "pt": {
+    "kicker": "Artist page / Electronic music press page",
+    "title": "EMIDE",
+    "description": "Tech House e Minimal com identidade refinada, grooves hipnóticos e energia de pista. Uma assinatura sonora pensada para clubs, labels e experiências noturnas.",
+    "imageSrc": "/assets/emide-home.jpg",
+    "imageAlt": "Retrato artistico dark do DJ EMIDE em uma composicao futurista",
+    "badge": {
+      "label": "Direcao sonora",
+      "value": "Tech house, minimal e atmosfera hipnotica"
+    },
+    "links": [
+      {
+        "label": "Spotify",
+        "href": "#spotify",
+        "external": false
+      },
+      {
+        "label": "Beatport",
+        "href": "#beatport",
+        "external": false
+      },
+      {
+        "label": "Sets",
+        "href": "#videos",
+        "external": false
+      },
+      {
+        "label": "Presskit",
+        "href": "#presskit",
+        "external": false
+      },
+      {
+        "label": "Bookings",
+        "href": "#contact",
+        "external": false
+      }
+    ]
+  },
+  "en": {
+    "kicker": "Artist page / Electronic music press page",
+    "title": "EMIDE",
+    "description": "Tech House and Minimal with a refined identity, hypnotic grooves, and dancefloor energy. A sonic signature crafted for clubs, labels, and nightlife experiences.",
+    "imageSrc": "/assets/emide-home.jpg",
+    "imageAlt": "Dark artistic portrait of DJ EMIDE in a futuristic composition",
+    "badge": {
+      "label": "Sound direction",
+      "value": "Tech house, minimal and hypnotic atmosphere"
+    },
+    "links": [
+      {
+        "label": "Spotify",
+        "href": "#spotify",
+        "external": false
+      },
+      {
+        "label": "Beatport",
+        "href": "#beatport",
+        "external": false
+      },
+      {
+        "label": "Sets",
+        "href": "#videos",
+        "external": false
+      },
+      {
+        "label": "Presskit",
+        "href": "#presskit",
+        "external": false
+      },
+      {
+        "label": "Bookings",
+        "href": "#contact",
+        "external": false
+      }
+    ]
+  }
+}

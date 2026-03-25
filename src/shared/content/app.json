@@ -1,0 +1,38 @@
+{
+  "pt": {
+    "brand": "EMide",
+    "navigationAriaLabel": "Navegacao principal",
+    "localeSwitcherLabel": "Seletor de idioma",
+    "locales": {
+      "pt": "PT-BR",
+      "en": "EN-US"
+    },
+    "navigation": {
+      "soundcloud": "SoundCloud",
+      "spotify": "Spotify",
+      "beatport": "Beatport",
+      "videos": "Shorts",
+      "biography": "Biografia",
+      "presskit": "Presskit",
+      "contact": "Contato"
+    }
+  },
+  "en": {
+    "brand": "EMide",
+    "navigationAriaLabel": "Main navigation",
+    "localeSwitcherLabel": "Language switcher",
+    "locales": {
+      "pt": "PT-BR",
+      "en": "EN-US"
+    },
+    "navigation": {
+      "soundcloud": "SoundCloud",
+      "spotify": "Spotify",
+      "beatport": "Beatport",
+      "videos": "Shorts",
+      "biography": "Biography",
+      "presskit": "Presskit",
+      "contact": "Contact"
+    }
+  }
+}

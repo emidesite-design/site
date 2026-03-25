@@ -1,0 +1,78 @@
+{
+  "pt": {
+    "kicker": "Bookings / Contato",
+    "title": "Pronto para clubs, labels e curadorias que buscam identidade.",
+    "description": "",
+    "email": "musicemide@gmail.com",
+    "socials": [
+      {
+        "label": "WhatsApp",
+        "icon": "whatsapp",
+        "href": "https://wa.me/5547997469285"
+      },
+      {
+        "label": "Instagram",
+        "icon": "instagram",
+        "href": "https://www.instagram.com/emide.wav/"
+      },
+      {
+        "label": "SoundCloud",
+        "icon": "soundcloud",
+        "href": "https://soundcloud.com/emide-wav"
+      },
+      {
+        "label": "Spotify",
+        "icon": "spotify",
+        "href": "https://open.spotify.com/intl-pt/artist/6dBXvF0t1FYgczjkNntZyy?si=W6_nI0gTRk2EV4HdawH4TQ&nd=1&dlsi=2c66c035920c469c"
+      },
+      {
+        "label": "Beatport",
+        "icon": "beatport",
+        "href": "https://www.beatport.com/pt/artist/emide-br/2303239"
+      },
+      {
+        "label": "Email",
+        "icon": "email",
+        "href": "mailto:musicemide@gmail.com"
+      }
+    ]
+  },
+  "en": {
+    "kicker": "Bookings / Contact",
+    "title": "Ready for clubs, labels and curators looking for identity.",
+    "description": "The page was structured to present the artist with commercial clarity and visual impact. Replace the example links with the official platforms and use the email below for proposals.",
+    "email": "musicemide@gmail.com",
+    "socials": [
+      {
+        "label": "WhatsApp",
+        "icon": "whatsapp",
+        "href": "https://wa.me/5547997469285"
+      },
+      {
+        "label": "Instagram",
+        "icon": "instagram",
+        "href": "https://www.instagram.com/emide.wav/"
+      },
+      {
+        "label": "SoundCloud",
+        "icon": "soundcloud",
+        "href": "https://soundcloud.com/emide-wav"
+      },
+      {
+        "label": "Spotify",
+        "icon": "spotify",
+        "href": "https://open.spotify.com/intl-pt/artist/6dBXvF0t1FYgczjkNntZyy?si=W6_nI0gTRk2EV4HdawH4TQ&nd=1&dlsi=2c66c035920c469c"
+      },
+      {
+        "label": "Beatport",
+        "icon": "beatport",
+        "href": "https://www.beatport.com/pt/artist/emide-br/2303239"
+      },
+      {
+        "label": "Email",
+        "icon": "email",
+        "href": "mailto:musicemide@gmail.com"
+      }
+    ]
+  }
+}

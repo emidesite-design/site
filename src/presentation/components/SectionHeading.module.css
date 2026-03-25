@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.icon {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  object-fit: contain;
+}
+
+.title {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Oxanium", sans-serif;
+  font-size: clamp(2.7rem, 7vw, 4.7rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  max-width: 42rem;
+  margin: 0.9rem 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.action {
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .titleRow {
+    gap: 0.7rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

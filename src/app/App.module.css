@@ -1,0 +1,175 @@
+.pageShell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.pageShell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(126, 92, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(0, 209, 255, 0.1), transparent 22%),
+    radial-gradient(circle at 50% 90%, rgba(255, 74, 31, 0.08), transparent 28%);
+  z-index: 0;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: min(1380px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+.brand,
+.topnav a {
+  position: relative;
+  z-index: 1;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9.5rem;
+}
+
+.brandLogo {
+  display: block;
+  width: 100%;
+  max-width: 6.5rem;
+  height: auto;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.9rem;
+  padding: 0.55rem 0.7rem 0.55rem 1.05rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  background: rgba(12, 12, 16, 0.78);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.topnav a {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.topnav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 3rem;
+}
+
+.featureBand {
+  --feature-band-image-position: 70% 10%;
+  --feature-band-image-size: auto 128%;
+  position: relative;
+  isolation: isolate;
+  padding: 0.75rem 0 1rem;
+  overflow: hidden;
+}
+/* 
+.featureBand::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(180deg, #000000 0%, #000000 12%, rgba(0, 0, 0, 0.94) 20%, rgba(0, 0, 0, 0.68) 30%, rgba(0, 0, 0, 0.34) 42%, rgba(0, 0, 0, 0.12) 54%, transparent 68%),
+    linear-gradient(90deg, rgba(2, 2, 3, 0.52) 0%, rgba(2, 2, 3, 0.34) 10%, rgba(2, 2, 3, 0.14) 24%, rgba(2, 2, 3, 0.03) 40%, rgba(2, 2, 3, 0.03) 60%, rgba(2, 2, 3, 0.14) 76%, rgba(2, 2, 3, 0.34) 90%, rgba(2, 2, 3, 0.52) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 24%, transparent 76%, rgba(255, 255, 255, 0.02)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02), transparent 14%, transparent 86%, rgba(255, 255, 255, 0.02)),
+    radial-gradient(circle at 18% 24%, rgba(255, 255, 255, 0.1), transparent 24%),
+    url("/assets/tocando1.png");
+  background-position: center top, center, center, center, 18% 24%, var(--feature-band-image-position);
+  background-repeat: no-repeat;
+  background-size: auto, auto, auto, auto, auto, var(--feature-band-image-size);
+  opacity: 1;
+  transform: scale(1.015);
+  filter: saturate(0.88) contrast(1.08) brightness(1.04);
+}
+
+.featureBand::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.24) 18%, rgba(2, 2, 3, 0.08) 34%, transparent 52%),
+    linear-gradient(90deg, rgba(2, 2, 3, 0.24) 0%, rgba(2, 2, 3, 0.12) 12%, rgba(2, 2, 3, 0.03) 28%, rgba(2, 2, 3, 0.03) 72%, rgba(2, 2, 3, 0.12) 88%, rgba(2, 2, 3, 0.24) 100%),
+    linear-gradient(180deg, rgba(2, 2, 3, 0.34) 0%, rgba(2, 2, 3, 0.18) 12%, rgba(2, 2, 3, 0.04) 30%, rgba(2, 2, 3, 0.04) 70%, rgba(2, 2, 3, 0.18) 88%, rgba(2, 2, 3, 0.34) 100%),
+    linear-gradient(90deg, transparent 0%, rgba(0, 209, 255, 0.04) 50%, transparent 100%);
+  pointer-events: none;
+} */
+
+@media (max-width: 1024px) {
+  .topbar {
+    display: none;
+  }
+
+  .featureBand {
+    --feature-band-image-position: 64% 12%;
+    --feature-band-image-size: auto 146%;
+    padding: 0.35rem 0 0.8rem;
+  }
+
+  .featureBand::before {
+    background:
+      linear-gradient(180deg, #000000 0%, #000000 14%, rgba(0, 0, 0, 0.9) 24%, rgba(0, 0, 0, 0.54) 36%, rgba(0, 0, 0, 0.18) 50%, transparent 66%),
+      linear-gradient(90deg, rgba(2, 2, 3, 0.38) 0%, rgba(2, 2, 3, 0.22) 12%, rgba(2, 2, 3, 0.08) 28%, rgba(2, 2, 3, 0.02) 46%, rgba(2, 2, 3, 0.02) 54%, rgba(2, 2, 3, 0.08) 72%, rgba(2, 2, 3, 0.22) 88%, rgba(2, 2, 3, 0.38) 100%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 18%, transparent 82%, rgba(255, 255, 255, 0.02)),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03), transparent 10%, transparent 90%, rgba(255, 255, 255, 0.03)),
+      radial-gradient(circle at 52% 18%, rgba(255, 255, 255, 0.14), transparent 24%),
+      url("/assets/tocando1.png");
+    background-position: center top, center, center, center, 52% 18%, var(--feature-band-image-position);
+    background-repeat: no-repeat;
+    background-size: auto, auto, auto, auto, auto, var(--feature-band-image-size);
+    opacity: 1;
+    transform: scale(1.03);
+    filter: saturate(0.94) contrast(1.08) brightness(1.08);
+  }
+
+  .featureBand::after {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.22) 20%, rgba(2, 2, 3, 0.06) 38%, transparent 56%),
+      linear-gradient(90deg, rgba(2, 2, 3, 0.18) 0%, rgba(2, 2, 3, 0.08) 14%, rgba(2, 2, 3, 0.02) 30%, rgba(2, 2, 3, 0.02) 70%, rgba(2, 2, 3, 0.08) 86%, rgba(2, 2, 3, 0.18) 100%),
+      linear-gradient(180deg, rgba(2, 2, 3, 0.26) 0%, rgba(2, 2, 3, 0.1) 14%, rgba(2, 2, 3, 0.02) 30%, rgba(2, 2, 3, 0.02) 70%, rgba(2, 2, 3, 0.1) 86%, rgba(2, 2, 3, 0.26) 100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .featureBand {
+    --feature-band-image-position: 58% 14%;
+    --feature-band-image-size: auto 174%;
+  }
+
+  .featureBand::before {
+    background-position: center top, center, center, center, 54% 16%, var(--feature-band-image-position);
+    background-size: auto, auto, auto, auto, auto, var(--feature-band-image-size);
+    transform: scale(1.01);
+  }
+}

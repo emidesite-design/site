@@ -1,0 +1,36 @@
+{
+  "pt": {
+    "title": "BEATPORT",
+    "kicker": "Artist profile",
+    "platformLabel": "Beatport Preview",
+    "logoAlt": "Logo EMIDE",
+    "headline": "Acesse o perfil oficial do EMIDE no Beatport.",
+    "description": "Como o Beatport nao oferece embed nativo de perfil de artista como Spotify e SoundCloud, esta secao funciona como um preview editorial com CTA direto para o perfil oficial.",
+    "previewDescription": "Catalogo, descoberta e posicionamento do artista em uma plataforma orientada ao ecossistema eletronico profissional.",
+    "pills": [
+      "Tech house",
+      "Minimal",
+      "Artist profile"
+    ],
+    "linkLabel": "Abrir Beatport",
+    "secondaryLinkLabel": "Ver artista",
+    "profileUrl": "https://www.beatport.com/pt/artist/emide-br/2303239"
+  },
+  "en": {
+    "title": "BEATPORT",
+    "kicker": "Artist profile",
+    "platformLabel": "Beatport Preview",
+    "logoAlt": "EMIDE logo",
+    "headline": "Open EMIDE's official Beatport profile.",
+    "description": "Since Beatport does not offer a native artist-profile embed like Spotify and SoundCloud, this section works as an editorial preview with a direct CTA to the official profile.",
+    "previewDescription": "Catalogue, discovery and artist positioning inside a platform focused on the professional electronic music ecosystem.",
+    "pills": [
+      "Tech house",
+      "Minimal",
+      "Artist profile"
+    ],
+    "linkLabel": "Open Beatport",
+    "secondaryLinkLabel": "View artist",
+    "profileUrl": "https://www.beatport.com/pt/artist/emide-br/2303239"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "pt": {
+    "items": [
+      {
+        "label": "Base",
+        "value": "Santa Catarina / BR",
+        "description": "Projeto artistico com linguagem orientada a clubs, afterhours e eventos de atmosfera premium."
+      },
+      {
+        "label": "Som",
+        "value": "Tech House + Minimal",
+        "description": "Groove seco, linhas hipnoticas e leitura de pista para manter tensao com elegancia."
+      },
+      {
+        "label": "Entrega",
+        "value": "Booking + Press",
+        "description": "Estrutura pensada para conversao em presskit, plataformas musicais e contato comercial."
+      }
+    ]
+  },
+  "en": {
+    "items": [
+      {
+        "label": "Base",
+        "value": "Santa Catarina / BR",
+        "description": "An artistic project shaped for clubs, afterhours and events with a premium atmosphere."
+      },
+      {
+        "label": "Sound",
+        "value": "Tech House + Minimal",
+        "description": "Dry groove, hypnotic lines and dance-floor reading to keep tension with elegance."
+      },
+      {
+        "label": "Delivery",
+        "value": "Booking + Press",
+        "description": "A structure designed to convert into presskit, music platforms and commercial contact."
+      }
+    ]
+  }
+}

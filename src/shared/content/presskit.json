@@ -1,0 +1,36 @@
+{
+  "pt": {
+    "title": "PRESSKIT",
+    "subtitle": "Imagens promocionais para apresentacao comercial, flyers, releases e materiais de curadoria.",
+    "ctaLabel": "VER MAIS",
+    "ctaHref": "https://drive.google.com/drive/folders/14ZMr8gVsv2Ez0vY_OecoLFBr2beyXG1g",
+    "emptyLabel": "Nenhuma imagem sincronizada ainda. Envie um manifesto publico do Supabase para preencher esta secao.",
+    "images": [
+      {
+        "src": "/assets/presskit-01.svg",
+        "alt": "Imagem promocional do artista EMIDE em fundo escuro com luz lateral"
+      },
+      {
+        "src": "/assets/presskit-02.svg",
+        "alt": "Imagem promocional do artista EMIDE com retrato escuro e composicao minimalista"
+      }
+    ]
+  },
+  "en": {
+    "title": "PRESSKIT",
+    "subtitle": "Promotional imagery for business presentations, flyers, releases and curation materials.",
+    "ctaLabel": "SEE MORE",
+    "ctaHref": "https://drive.google.com/drive/folders/14ZMr8gVsv2Ez0vY_OecoLFBr2beyXG1g",
+    "emptyLabel": "No synced images yet. Point the site to a public Supabase manifest to populate this section.",
+    "images": [
+      {
+        "src": "/assets/presskit-01.svg",
+        "alt": "Promotional image of artist EMIDE on a dark background with side light"
+      },
+      {
+        "src": "/assets/presskit-02.svg",
+        "alt": "Promotional image of artist EMIDE with a dark portrait and minimalist composition"
+      }
+    ]
+  }
+}
