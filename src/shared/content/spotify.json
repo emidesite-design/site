@@ -2,19 +2,19 @@
   "pt": {
     "title": "SPOTIFY",
     "subtitle": "Embed oficial do artista para destacar o perfil e facilitar o acesso aos ouvintes diretamente pela interface nativa da plataforma.",
-    "platformLabel": "Player nativo",
+    "platformLabel": "Último lançamento",
     "linkLabel": "Abrir no Spotify",
-    "profileUrl": "https://open.spotify.com/intl-pt/artist/6dBXvF0t1FYgczjkNntZyy?si=W6_nI0gTRk2EV4HdawH4TQ&nd=1&dlsi=d6f88be6488341e4",
-    "embedUrl": "https://open.spotify.com/embed/artist/6dBXvF0t1FYgczjkNntZyy?utm_source=generator&theme=0",
+    "profileUrl": "https://open.spotify.com/track/6Fw1GQ8f5bQ8CyVghFlIGy?si=HyGyVOz_Sg-DHm_B7RTc8w",
+    "embedUrl": "https://open.spotify.com/embed/track/6Fw1GQ8f5bQ8CyVghFlIGy?utm_source=generator&theme=0",
     "iframeTitle": "Player oficial do Spotify de EMIDE"
   },
   "en": {
     "title": "SPOTIFY",
     "subtitle": "Official artist embed to highlight the profile and let listeners jump into Spotify through the platform's native interface.",
-    "platformLabel": "Native player",
+    "platformLabel": "Latest release",
     "linkLabel": "Open on Spotify",
-    "profileUrl": "https://open.spotify.com/intl-pt/artist/6dBXvF0t1FYgczjkNntZyy?si=W6_nI0gTRk2EV4HdawH4TQ&nd=1&dlsi=d6f88be6488341e4",
-    "embedUrl": "https://open.spotify.com/embed/artist/6dBXvF0t1FYgczjkNntZyy?utm_source=generator&theme=0",
+    "profileUrl": "https://open.spotify.com/track/6Fw1GQ8f5bQ8CyVghFlIGy?si=HyGyVOz_Sg-DHm_B7RTc8w",
+    "embedUrl": "https://open.spotify.com/embed/track/6Fw1GQ8f5bQ8CyVghFlIGy?utm_source=generator&theme=0",
     "iframeTitle": "Official Spotify player for EMIDE"
   }
 }
