@@ -16,11 +16,25 @@
     rgba(8, 8, 10, 0.94);
 }
 
-.copy,
 .actions {
   padding: 1.15rem;
   border-radius: 1.35rem;
   background: rgba(255, 255, 255, 0.02);
+}
+
+.copy {
+  border-radius: 1.35rem;
+  background: rgba(255, 255, 255, 0.02);
+  height: 300px;
+}
+
+
+.copy img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  object-position: 0% 30%;   
 }
 
 .kicker {

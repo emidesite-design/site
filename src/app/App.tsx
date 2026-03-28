@@ -27,7 +27,7 @@ function AppShell() {
             className={styles.brandLogo}
             decoding="async"
             height={1080}
-            src="/assets/logo.svg"
+            src="/assets/emide-logo-nav.png"
             width={1080}
           />
         </SectionLink>

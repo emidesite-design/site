@@ -11,7 +11,7 @@
 .copy {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .kicker {
@@ -58,12 +58,13 @@
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
   line-height: 1.8;
+  padding: 12px;
 }
 
 .visualShell {
   position: relative;
   justify-self: end;
-  width: min(100%, 42rem);
+  width: min(100%, 35rem);
   aspect-ratio: 1322 / 1696;
   padding: 1.1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);

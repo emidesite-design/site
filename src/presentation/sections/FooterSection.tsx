@@ -31,9 +31,16 @@ export function FooterSection() {
     <footer className={styles.footer} id="contact">
       <div className={styles.panel}>
         <div className={styles.copy}>
-          <span className={styles.kicker}>{copy.kicker}</span>
+          <img
+            alt={copy.title}
+            className={styles.titleLogo}
+            decoding="async"
+            fetchPriority="high"
+            src="/assets/emide-footer-2.jpg"
+          />
+          {/* <span className={styles.kicker}>{copy.kicker}</span>
           <h2 className={styles.title}>{copy.title}</h2>
-          <p className={styles.description}>{copy.description}</p>
+          <p className={styles.description}>{copy.description}</p> */}
         </div>
 
         <div className={styles.actions}>
