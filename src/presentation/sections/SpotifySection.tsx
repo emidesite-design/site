@@ -28,13 +28,15 @@ export function SpotifySection() {
           </a>
         </div>
 
-        <iframe
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          className={styles.embed}
-          loading="lazy"
-          src={copy.embedUrl}
-          title={copy.iframeTitle}
-        />
+        <div className={styles.embedFrame}>
+          <iframe
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            className={styles.embed}
+            loading="lazy"
+            src={copy.embedUrl}
+            title={copy.iframeTitle}
+          />
+        </div>
       </div>
     </section>
   );
