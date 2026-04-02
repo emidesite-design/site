@@ -45,7 +45,7 @@
 .brandLogo {
   display: block;
   width: 100%;
-  max-width: 6.5rem;
+  max-width: 3.5rem;
   height: auto;
 }
 
@@ -88,7 +88,7 @@
   --feature-band-image-position: center 8%;
   position: relative;
   isolation: isolate;
-  padding: 1rem 0 1.15rem;
+  padding: 2.5rem 0 3rem;
   overflow: hidden;
 }
 
@@ -97,11 +97,11 @@
   position: absolute;
   top: -11rem;
   right: 0;
-  bottom: 48rem;
+  bottom: 8rem;
   left: 50%;
   z-index: -2;
   width: 100vw;
-  transform: translateX(-50%) scale(1.02);
+  transform: translateX(-50%) scale(1.08);
   background:
     linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.86) 10%, rgba(0, 0, 0, 0.42) 26%, rgba(0, 0, 0, 0.12) 44%, rgba(0, 0, 0, 0.16) 62%, rgba(0, 0, 0, 0.58) 84%, #000000 100%),
     linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.9) 8%, rgba(0, 0, 0, 0.44) 20%, rgba(0, 0, 0, 0.08) 34%, rgba(0, 0, 0, 0.08) 66%, rgba(0, 0, 0, 0.44) 80%, rgba(0, 0, 0, 0.9) 92%, #000000 100%),
@@ -110,7 +110,7 @@
     url("/assets/bg-bio.jpg");
   background-position: center top, center, center, center, var(--feature-band-image-position);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: auto, auto, 100% 100%, 100% 100%, cover;
+  background-size: auto, auto, 100% 100%, 100% 100%, 110% auto;
   opacity: 1;
   filter: saturate(1) contrast(1.04) brightness(0.9);
 }
@@ -134,7 +134,7 @@
 
   .featureBand {
     --feature-band-image-position: center 10%;
-    padding: 0.45rem 0 0.9rem;
+    padding: 1.4rem 0 1.9rem;
   }
 
   .featureBand::before {
@@ -148,7 +148,7 @@
       url("/assets/bg-bio.jpg");
     background-position: center top, center, center, center, var(--feature-band-image-position);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: auto, auto, 100% 100%, 100% 100%, cover;
+    background-size: auto, auto, 100% 100%, 100% 100%, 108% auto;
     filter: saturate(1) contrast(1.02) brightness(0.88);
   }
 
@@ -163,10 +163,12 @@
 @media (max-width: 640px) {
   .featureBand {
     --feature-band-image-position: center 12%;
+    padding: 1.1rem 0 1.55rem;
   }
 
   .featureBand::before {
     top: -1.25rem;
     bottom: -1rem;
+    background-size: auto, auto, 100% 100%, 100% 100%, 112% auto;
   }
 }
