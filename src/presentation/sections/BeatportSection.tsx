@@ -46,9 +46,10 @@ export function BeatportSection() {
         </div>
 
         <div className={styles.copy}>
-          <span className={styles.kicker}>{copy.kicker}</span>
-          <h3 className={styles.headline}>{copy.headline}</h3>
-          <p className={styles.description}>{copy.description}</p>
+          <div>
+            <span className={styles.kicker}>{copy.kicker}</span>
+            <h3 className={styles.headline}>{copy.headline}</h3>    
+          </div>
 
           <div className={styles.actions}>
             <a

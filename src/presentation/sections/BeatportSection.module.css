@@ -28,6 +28,16 @@
   background: rgba(255, 255, 255, 0.02);
 }
 
+.copy {
+  justify-content: space-between;
+}
+
+.copy > div:first-child{
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
 .previewPanel {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
