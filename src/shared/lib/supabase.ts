@@ -11,4 +11,10 @@ if (!supabaseKey) {
   throw new Error("Missing VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY.");
 }
 
-export const supabase = createClient(supabaseUrl, supabaseKey);
+export const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    autoRefreshToken: false,
+    detectSessionInUrl: false,
+    persistSession: false,
+  },
+});

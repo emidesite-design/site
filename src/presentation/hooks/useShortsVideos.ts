@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { readCachedValue, writeCachedValue } from "@/shared/lib/browserCache";
 import { supabase } from "@/shared/lib/supabase";
 
 export interface ShortVideoItem {
@@ -18,6 +19,22 @@ interface UseShortsVideosState {
   items: ShortVideoItem[];
   loading: boolean;
 }
+
+interface ShortsManifestItem {
+  id?: string | number;
+  title?: string;
+  thumbnailSrc?: string;
+  thumbnailAlt?: string;
+  embedUrl?: string;
+  link?: string;
+}
+
+interface ShortsManifestResponse {
+  items?: ShortsManifestItem[];
+}
+
+const SHORTS_CACHE_KEY = "shorts-videos-v1";
+const SHORTS_CACHE_TTL_MS = 1000 * 60 * 60;
 
 function extractYouTubeVideoId(link: string): string | null {
   try {
@@ -68,6 +85,32 @@ function mapShortToVideo(row: ShortRow, index: number): ShortVideoItem | null {
   };
 }
 
+function normalizeManifestShort(item: ShortsManifestItem, index: number): ShortVideoItem | null {
+  if (item.embedUrl && item.thumbnailSrc) {
+    const title = item.title?.trim() || formatShortTitle(index);
+
+    return {
+      id: String(item.id ?? title),
+      title,
+      thumbnailSrc: item.thumbnailSrc,
+      thumbnailAlt: item.thumbnailAlt?.trim() || `${title} thumbnail`,
+      embedUrl: item.embedUrl,
+    };
+  }
+
+  if (item.link) {
+    return mapShortToVideo(
+      {
+        id: item.id ?? index,
+        link: item.link,
+      },
+      index,
+    );
+  }
+
+  return null;
+}
+
 export function useShortsVideos(): UseShortsVideosState {
   const [state, setState] = useState<UseShortsVideosState>({
     items: [],
@@ -76,8 +119,32 @@ export function useShortsVideos(): UseShortsVideosState {
 
   useEffect(() => {
     let active = true;
+    const manifestUrl = import.meta.env.VITE_SUPABASE_SHORTS_URL?.trim();
+    const sources = manifestUrl ? [manifestUrl, "/data/shorts.json"] : ["/data/shorts.json"];
 
-    async function loadShorts() {
+    async function fetchShortsManifest(source: string): Promise<ShortVideoItem[] | null> {
+      try {
+        const response = await fetch(source, {
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (!response.ok) {
+          return null;
+        }
+
+        const payload = (await response.json()) as ShortsManifestResponse;
+
+        return (payload.items ?? [])
+          .map((item, index) => normalizeManifestShort(item, index))
+          .filter((item): item is ShortVideoItem => Boolean(item));
+      } catch {
+        return null;
+      }
+    }
+
+    async function fetchShortsFromSupabase(): Promise<ShortVideoItem[] | null> {
       try {
         const { data, error } = await supabase
           .from("shorts")
@@ -85,15 +152,41 @@ export function useShortsVideos(): UseShortsVideosState {
           .order("id", { ascending: true });
 
         if (error || !data) {
-          return [];
+          return null;
         }
 
         return data
           .map((row, index) => mapShortToVideo(row as ShortRow, index))
           .filter((item): item is ShortVideoItem => Boolean(item));
       } catch {
-        return [];
+        return null;
       }
+    }
+
+    async function loadShorts() {
+      const cachedItems = readCachedValue<ShortVideoItem[]>(SHORTS_CACHE_KEY);
+
+      if (cachedItems) {
+        return cachedItems;
+      }
+
+      for (const source of sources) {
+        const manifestItems = await fetchShortsManifest(source);
+
+        if (manifestItems) {
+          writeCachedValue(SHORTS_CACHE_KEY, manifestItems, SHORTS_CACHE_TTL_MS);
+          return manifestItems;
+        }
+      }
+
+      const supabaseItems = await fetchShortsFromSupabase();
+
+      if (supabaseItems) {
+        writeCachedValue(SHORTS_CACHE_KEY, supabaseItems, SHORTS_CACHE_TTL_MS);
+        return supabaseItems;
+      }
+
+      return [];
     }
 
     void loadShorts().then((items) => {

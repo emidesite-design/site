@@ -6,6 +6,7 @@ interface ImportMetaEnv {
   readonly VITE_SUPABASE_PRESSKIT_BUCKET?: string;
   readonly VITE_SUPABASE_PRESSKIT_FOLDER?: string;
   readonly VITE_SUPABASE_PRESSKIT_URL?: string;
+  readonly VITE_SUPABASE_SHORTS_URL?: string;
 }
 
 interface ImportMeta {

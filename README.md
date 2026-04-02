@@ -21,8 +21,10 @@ Use `.env.local` ou as variaveis da Vercel para centralizar configuracoes.
 
 - Obrigatorias hoje:
   `VITE_SUPABASE_URL` e `VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY`
-- Opcionais para o presskit:
-  `VITE_SUPABASE_PRESSKIT_BUCKET`, `VITE_SUPABASE_PRESSKIT_FOLDER` e `VITE_SUPABASE_PRESSKIT_URL`
+- Opcional para o presskit via manifesto publico:
+  `VITE_SUPABASE_PRESSKIT_URL`
+- Opcional para shorts via manifesto publico:
+  `VITE_SUPABASE_SHORTS_URL`
 - Opcional apenas para o script `npm run sync:presskit`:
   `SUPABASE_PRESSKIT_MANIFEST_URL`
 
@@ -44,16 +46,19 @@ src/
 ## Supabase Storage
 
 O presskit agora consome um manifesto JSON publico, ideal para hospedar no Supabase Storage e servir na Vercel sem expor segredos no browser.
+Os shorts tambem podem seguir o mesmo padrao, evitando leitura direta no banco em toda visita.
 
-- busca direta de imagens por bucket/pasta: `VITE_SUPABASE_PRESSKIT_BUCKET` + `VITE_SUPABASE_PRESSKIT_FOLDER`
 - fallback local: `/data/presskit.json`
 - opcional via env no front: `VITE_SUPABASE_PRESSKIT_URL`
+- fallback local para videos: `/data/shorts.json`
+- opcional via env no front para videos: `VITE_SUPABASE_SHORTS_URL`
 - opcional via env no script de sync local: `SUPABASE_PRESSKIT_MANIFEST_URL`
 
 Exemplo de `.env`:
 
 ```bash
 VITE_SUPABASE_PRESSKIT_URL=https://<project-ref>.supabase.co/storage/v1/object/public/presskit/presskit.json
+VITE_SUPABASE_SHORTS_URL=https://<project-ref>.supabase.co/storage/v1/object/public/shorts/shorts.json
 SUPABASE_PRESSKIT_MANIFEST_URL=https://<project-ref>.supabase.co/storage/v1/object/public/presskit/presskit.json
 ```
 
@@ -76,6 +81,7 @@ Formato esperado do manifesto:
 ## Cliente Supabase
 
 O client compartilhado fica em `src/shared/lib/supabase.ts` e deve ser usado apenas com a chave publishable no frontend.
+Para reduzir abuso por refresh e custo de leitura, o app prioriza manifestos publicos cacheados no navegador; o Supabase direto fica apenas como fallback.
 
 Exemplo:
 
