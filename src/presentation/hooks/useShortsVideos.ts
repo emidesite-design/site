@@ -166,14 +166,14 @@ export function useShortsVideos(): UseShortsVideosState {
     async function loadShorts() {
       const cachedItems = readCachedValue<ShortVideoItem[]>(SHORTS_CACHE_KEY);
 
-      if (cachedItems) {
+      if (cachedItems && cachedItems.length > 0) {
         return cachedItems;
       }
 
       for (const source of sources) {
         const manifestItems = await fetchShortsManifest(source);
 
-        if (manifestItems) {
+        if (manifestItems && manifestItems.length > 0) {
           writeCachedValue(SHORTS_CACHE_KEY, manifestItems, SHORTS_CACHE_TTL_MS);
           return manifestItems;
         }
@@ -181,7 +181,7 @@ export function useShortsVideos(): UseShortsVideosState {
 
       const supabaseItems = await fetchShortsFromSupabase();
 
-      if (supabaseItems) {
+      if (supabaseItems && supabaseItems.length > 0) {
         writeCachedValue(SHORTS_CACHE_KEY, supabaseItems, SHORTS_CACHE_TTL_MS);
         return supabaseItems;
       }

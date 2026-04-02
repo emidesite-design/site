@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { PresskitImage } from "@/domain/entities/presskit";
 import { readCachedValue, writeCachedValue } from "@/shared/lib/browserCache";
+import { supabase } from "@/shared/lib/supabase";
 
 interface PresskitResponse {
   images?: PresskitImage[];
@@ -37,6 +38,8 @@ export function usePresskitImages(): UsePresskitImagesState {
   useEffect(() => {
     let active = true;
     const manifestUrl = import.meta.env.VITE_SUPABASE_PRESSKIT_URL?.trim();
+    const presskitBucket = import.meta.env.VITE_SUPABASE_PRESSKIT_BUCKET?.trim();
+    const presskitFolder = import.meta.env.VITE_SUPABASE_PRESSKIT_FOLDER?.trim() ?? "";
     const sources = manifestUrl ? [manifestUrl, "/data/presskit.json"] : ["/data/presskit.json"];
 
     async function fetchImages(source: string): Promise<PresskitImage[] | null> {
@@ -63,20 +66,70 @@ export function usePresskitImages(): UsePresskitImagesState {
       }
     }
 
+    async function fetchStorageImages(): Promise<PresskitImage[] | null> {
+      if (!presskitBucket) {
+        return null;
+      }
+
+      try {
+        const { data, error } = await supabase.storage
+          .from(presskitBucket)
+          .list(presskitFolder, {
+            limit: 100,
+            offset: 0,
+            sortBy: { column: "name", order: "asc" },
+          });
+
+        if (error || !data) {
+          return null;
+        }
+
+        const images = data
+          .filter((file) => Boolean(file.name))
+          .map((file, index) => {
+            const objectPath = presskitFolder ? `${presskitFolder}/${file.name}` : file.name;
+            const { data: publicUrlData } = supabase.storage
+              .from(presskitBucket)
+              .getPublicUrl(objectPath);
+
+            return normalizeImage(
+              {
+                id: file.id ?? objectPath,
+                url: publicUrlData.publicUrl,
+                alt: file.name,
+              },
+              index,
+            );
+          })
+          .filter((image): image is PresskitImage => Boolean(image));
+
+        return images;
+      } catch {
+        return null;
+      }
+    }
+
     async function loadImages() {
       const cachedImages = readCachedValue<PresskitImage[]>(PRESSKIT_CACHE_KEY);
 
-      if (cachedImages) {
+      if (cachedImages && cachedImages.length > 0) {
         return cachedImages;
       }
 
       for (const source of sources) {
         const images = await fetchImages(source);
 
-        if (images) {
+        if (images && images.length > 0) {
           writeCachedValue(PRESSKIT_CACHE_KEY, images, PRESSKIT_CACHE_TTL_MS);
           return images;
         }
+      }
+
+      const storageImages = await fetchStorageImages();
+
+      if (storageImages && storageImages.length > 0) {
+        writeCachedValue(PRESSKIT_CACHE_KEY, storageImages, PRESSKIT_CACHE_TTL_MS);
+        return storageImages;
       }
 
       return [];
