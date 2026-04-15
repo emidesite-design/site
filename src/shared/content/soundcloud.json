@@ -23,7 +23,7 @@
   "en": {
     "title": "SOUNDCLOUD",
     "subtitle": "Tracks embedded with SoundCloud native players, organized in a grid so listeners can play them directly on the page.",
-    "platformLabel": "Native player",
+    "platformLabel": "",
     "linkLabel": "See more",
     "profileUrl": "https://soundcloud.com/emidebr",
     "tracks": [
