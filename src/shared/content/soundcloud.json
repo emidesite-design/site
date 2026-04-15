@@ -4,18 +4,18 @@
     "subtitle": "Faixas incorporadas em embeds nativos do SoundCloud, organizadas em grade para ouvir direto na pagina.",
     "platformLabel": "Player nativo",
     "linkLabel": "Veja mais",
-    "profileUrl": "https://soundcloud.com/emide-wav",
+    "profileUrl": "https://soundcloud.com/emidebr",
     "tracks": [
       {
         "title": "SET 2026",
-        "trackUrl": "https://soundcloud.com/emide-wav/nome-artistico-elfortintalent2026",
-        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emide-wav/nome-artistico-elfortintalent2026&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
+        "trackUrl": "https://soundcloud.com/emidebr/nome-artistico-elfortintalent2026",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emidebr/nome-artistico-elfortintalent2026&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
         "iframeTitle": "Faixa Nome Artistico El Fortin Talent 2026 no SoundCloud"
       },
       {
         "title": "EMIDE | Bar do Ge Set",
-        "trackUrl": "https://soundcloud.com/emide-wav/emide-bar-do-ge-set",
-        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emide-wav/emide-bar-do-ge-set&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
+        "trackUrl": "https://soundcloud.com/emidebr/emide-bar-do-ge-set",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emidebr/emide-bar-do-ge-set&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
         "iframeTitle": "Faixa EMIDE Bar do Ge Set no SoundCloud"
       }
     ]
@@ -25,18 +25,18 @@
     "subtitle": "Tracks embedded with SoundCloud native players, organized in a grid so listeners can play them directly on the page.",
     "platformLabel": "Native player",
     "linkLabel": "See more",
-    "profileUrl": "https://soundcloud.com/emide-wav",
+    "profileUrl": "https://soundcloud.com/emidebr",
     "tracks": [
       {
         "title": "SET 2026",
-        "trackUrl": "https://soundcloud.com/emide-wav/nome-artistico-elfortintalent2026",
-        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emide-wav/nome-artistico-elfortintalent2026&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
+        "trackUrl": "https://soundcloud.com/emidebr/nome-artistico-elfortintalent2026",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emidebr/nome-artistico-elfortintalent2026&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
         "iframeTitle": "Track Nome Artistico El Fortin Talent 2026 on SoundCloud"
       },
       {
         "title": "EMIDE | Bar do Ge Set",
-        "trackUrl": "https://soundcloud.com/emide-wav/emide-bar-do-ge-set",
-        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emide-wav/emide-bar-do-ge-set&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
+        "trackUrl": "https://soundcloud.com/emidebr/emide-bar-do-ge-set",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/emidebr/emide-bar-do-ge-set&color=%2309090b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
         "iframeTitle": "Track EMIDE Bar do Ge Set on SoundCloud"
       }
     ]
