@@ -16,7 +16,7 @@
         "duration": "32 min",
         "thumbnailSrc": "/assets/video-thumb-01.svg",
         "thumbnailAlt": "Thumbnail de set com luzes roxas e azuladas em ambiente escuro",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/ScMzIvxBSi4"
+        "embedUrl": "https://youtu.be/5bHwEMLggVA"
       },
       {
         "id": "club-session",
@@ -26,7 +26,7 @@
         "duration": "41 min",
         "thumbnailSrc": "/assets/video-thumb-02.svg",
         "thumbnailAlt": "Thumbnail de set com cabine iluminada por neon rosa e azul",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/tgbNymZ7vqY"
+        "embedUrl": "https://youtu.be/0hPgWKGRQos"
       }
     ]
   },
@@ -47,7 +47,7 @@
         "duration": "32 min",
         "thumbnailSrc": "/assets/video-thumb-01.svg",
         "thumbnailAlt": "Set thumbnail with purple and blue lights in a dark environment",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/ScMzIvxBSi4"
+        "embedUrl": "https://youtu.be/5bHwEMLggVA"
       },
       {
         "id": "club-session",
@@ -57,7 +57,7 @@
         "duration": "41 min",
         "thumbnailSrc": "/assets/video-thumb-02.svg",
         "thumbnailAlt": "Set thumbnail with a booth lit by pink and blue neon",
-        "embedUrl": "https://www.youtube-nocookie.com/embed/tgbNymZ7vqY"
+        "embedUrl": "https://youtu.be/0hPgWKGRQos"
       }
     ]
   }
