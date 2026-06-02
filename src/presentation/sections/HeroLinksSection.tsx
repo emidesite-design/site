@@ -11,7 +11,13 @@ export function HeroLinksSection() {
     <section aria-label="Hero links" className={styles.section}>
       <div className={styles.grid}>
         {copy.links.map((link) => (
-          <SectionLink className={styles.actionButton} href={link.href} key={link.label}>
+          <SectionLink
+            className={styles.actionButton}
+            href={link.href}
+            key={link.label}
+            aria-label={link.ariaLabel}
+            title={link.description}
+          >
             {link.label}
           </SectionLink>
         ))}

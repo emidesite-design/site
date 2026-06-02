@@ -13,27 +13,37 @@
       {
         "label": "Spotify",
         "href": "#spotify",
-        "external": false
+        "external": false,
+        "description": "Ouça as faixas e playlists de EMIDE no Spotify",
+        "ariaLabel": "Ir para seção de Spotify de EMIDE"
       },
       {
         "label": "Beatport",
         "href": "#beatport",
-        "external": false
+        "external": false,
+        "description": "Acesse os beats e produções de EMIDE no Beatport",
+        "ariaLabel": "Ir para seção de Beatport de EMIDE"
       },
       {
         "label": "Sets",
         "href": "#videos",
-        "external": false
+        "external": false,
+        "description": "Assista aos sets ao vivo e vídeos de EMIDE",
+        "ariaLabel": "Ir para seção de sets e vídeos de EMIDE"
       },
       {
         "label": "Presskit",
         "href": "#presskit",
-        "external": false
+        "external": false,
+        "description": "Baixe informações e mídia profissional de EMIDE",
+        "ariaLabel": "Ir para o presskit de EMIDE"
       },
       {
         "label": "Bookings",
         "href": "#contact",
-        "external": false
+        "external": false,
+        "description": "Entre em contato para apresentações e parcerias com EMIDE",
+        "ariaLabel": "Ir para seção de contato e bookings de EMIDE"
       }
     ]
   },
@@ -51,27 +61,37 @@
       {
         "label": "Spotify",
         "href": "#spotify",
-        "external": false
+        "external": false,
+        "description": "Listen to EMIDE's tracks and playlists on Spotify",
+        "ariaLabel": "Go to EMIDE's Spotify section"
       },
       {
         "label": "Beatport",
         "href": "#beatport",
-        "external": false
+        "external": false,
+        "description": "Access EMIDE's beats and productions on Beatport",
+        "ariaLabel": "Go to EMIDE's Beatport section"
       },
       {
         "label": "Sets",
         "href": "#videos",
-        "external": false
+        "external": false,
+        "description": "Watch EMIDE's live sets and video performances",
+        "ariaLabel": "Go to EMIDE's sets and videos section"
       },
       {
         "label": "Presskit",
         "href": "#presskit",
-        "external": false
+        "external": false,
+        "description": "Download professional information and media about EMIDE",
+        "ariaLabel": "Go to EMIDE's presskit"
       },
       {
         "label": "Bookings",
         "href": "#contact",
-        "external": false
+        "external": false,
+        "description": "Contact EMIDE for performances and partnerships",
+        "ariaLabel": "Go to contact and booking section for EMIDE"
       }
     ]
   }
