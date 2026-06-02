@@ -20,15 +20,6 @@ export function SectionHeading({
     <div className={styles.wrapper}>
       <div>
         <div className={styles.titleRow}>
-          {iconSrc && (
-            <img
-              alt={iconAlt}
-              decoding="async"
-              height={24}
-              src={iconSrc}
-              width={24}
-            />
-          )}
           <h2 className={styles.title}>{title}</h2>
         </div>
         {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
