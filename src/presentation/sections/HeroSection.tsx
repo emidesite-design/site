@@ -33,9 +33,9 @@ export function HeroSection() {
             className={styles.heroImage}
             decoding="async"
             fetchPriority="high"
-            height={1400}
+            height={1024}
             src={copy.imageSrc}
-            width={1000}
+            width={1024}
           />
         </div>
         <div className={styles.mobileTitle}>
