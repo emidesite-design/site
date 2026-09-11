@@ -30,26 +30,61 @@
   text-transform: uppercase;
 }
 
-.link {
-  display: inline-block;
+.tracksList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.trackItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.trackHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.trackTitle {
   color: #ffffff;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  overflow-wrap: break-word;
+}
+
+.trackLink {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   overflow-wrap: anywhere;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.trackLink:hover {
+  color: #ffffff;
 }
 
 .embedFrame {
   overflow: hidden;
-  border-radius: 1.1rem;
+  border-radius: 0.9rem;
   background: #111;
 }
 
 .embed {
   display: block;
   width: 100%;
-  height: 352px;
+  height: 120px;
   border: 0;
   background: #111;
 }
@@ -59,16 +94,14 @@
     width: min(1380px, calc(100vw - 2.4rem));
   }
 
-  .meta {
-    align-items: flex-start;
-    flex-direction: column;
+  .tracksList {
+    gap: 1rem;
   }
 
   .embed {
-    height: 352px;
+    height: 120px;
   }
 }
-
 
 @media (max-width: 640px) {
   .section {
@@ -86,13 +119,28 @@
     margin-bottom: 0.8rem;
   }
 
-  .meta span,
-  .link {
+  .meta span {
     font-size: 0.68rem;
     letter-spacing: 0.12em;
   }
 
+  .trackTitle {
+    font-size: 0.8rem;
+  }
+
+  .trackLink {
+    font-size: 0.65rem;
+  }
+
   .embedFrame {
-    border-radius: 0.9rem;
+    border-radius: 0.8rem;
+  }
+
+  .tracksList {
+    gap: 0.8rem;
+  }
+
+  .trackItem {
+    gap: 0.5rem;
   }
 }
