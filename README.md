@@ -1,4 +1,4 @@
-# EMide Landing Page
+# EMIDE
 
 Landing page em React para o DJ EMide, com foco em responsividade, direcao visual forte e separacao limpa entre UI, caso de uso e infraestrutura de midia.
 
