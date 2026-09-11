@@ -15,38 +15,32 @@ export function SpotifySection() {
         title={copy.title}
       />
 
-      <div className={styles.card}>
-        <div className={styles.meta}>
-          <span>{copy.platformLabel}</span>
-        </div>
-
-        <div className={styles.tracksList}>
-          {copy.tracks.map((track, index) => (
-            <div key={index} className={styles.trackItem}>
-              <div className={styles.trackHeader}>
-                <span className={styles.trackTitle}>{track.title}</span>
-                <a
-                  className={styles.trackLink}
-                  href={track.profileUrl}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  {copy.linkLabel}
-                </a>
-              </div>
-
-              <div className={styles.embedFrame}>
-                <iframe
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  className={styles.embed}
-                  loading="lazy"
-                  src={track.embedUrl}
-                  title={track.iframeTitle}
-                />
-              </div>
+      <div className={styles.container}>
+        {copy.tracks.map((track, index) => (
+          <div key={index} className={styles.card}>
+            <div className={styles.meta}>
+              <span>{track.title}</span>
+              <a
+                className={styles.link}
+                href={track.profileUrl}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {copy.linkLabel}
+              </a>
             </div>
-          ))}
-        </div>
+
+            <div className={styles.embedFrame}>
+              <iframe
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                className={styles.embed}
+                loading="lazy"
+                src={track.embedUrl}
+                title={track.iframeTitle}
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
