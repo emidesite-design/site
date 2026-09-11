@@ -79,15 +79,18 @@
   overflow: hidden;
   border-radius: 0.9rem;
   background: #111;
-  height: 100px;
+  height: 80px;
+  position: relative;
+  clip-path: inset(0 0 20px 0);
 }
 
 .embed {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 130px;
   border: 0;
   background: #111;
+  margin-top: -20px;
 }
 
 @media (max-width: 1024px) {
@@ -100,11 +103,13 @@
   }
 
   .embedFrame {
-    height: 100px;
+    height: 80px;
+    clip-path: inset(0 0 20px 0);
   }
 
   .embed {
-    height: 100%;
+    height: 130px;
+    margin-top: -20px;
   }
 }
 
@@ -139,7 +144,13 @@
 
   .embedFrame {
     border-radius: 0.8rem;
-    height: 100px;
+    height: 80px;
+    clip-path: inset(0 0 20px 0);
+  }
+
+  .embed {
+    height: 130px;
+    margin-top: -20px;
   }
 
   .tracksList {
