@@ -2,19 +2,53 @@
   "pt": {
     "title": "SPOTIFY",
     "subtitle": "Embed oficial do artista para destacar o perfil e facilitar o acesso aos ouvintes diretamente pela interface nativa da plataforma.",
-    "platformLabel": "Último lançamento",
+    "platformLabel": "Seleção de faixas",
     "linkLabel": "Abrir no Spotify",
-    "profileUrl": "https://open.spotify.com/track/6Fw1GQ8f5bQ8CyVghFlIGy?si=HyGyVOz_Sg-DHm_B7RTc8w",
-    "embedUrl": "https://open.spotify.com/embed/track/6Fw1GQ8f5bQ8CyVghFlIGy?utm_source=generator&theme=0",
-    "iframeTitle": "Player oficial do Spotify de EMIDE"
+    "tracks": [
+      {
+        "title": "Vendetta",
+        "profileUrl": "https://open.spotify.com/intl-pt/track/2ybj9JdCt6FQuvMAS4Ulf9?si=effc808de08d4a81",
+        "embedUrl": "https://open.spotify.com/embed/track/2ybj9JdCt6FQuvMAS4Ulf9?utm_source=generator&theme=0",
+        "iframeTitle": "Player oficial do Spotify de EMIDE - Vendetta"
+      },
+      {
+        "title": "Moog",
+        "profileUrl": "https://open.spotify.com/intl-pt/track/7qQEuNXbSdVFuiEOXqP7P2?si=92f4bf8036c24637",
+        "embedUrl": "https://open.spotify.com/embed/track/7qQEuNXbSdVFuiEOXqP7P2?utm_source=generator&theme=0",
+        "iframeTitle": "Player oficial do Spotify de EMIDE - Moog"
+      },
+      {
+        "title": "Coming for You",
+        "profileUrl": "https://open.spotify.com/track/6Fw1GQ8f5bQ8CyVghFlIGy?si=HyGyVOz_Sg-DHm_B7RTc8w",
+        "embedUrl": "https://open.spotify.com/embed/track/6Fw1GQ8f5bQ8CyVghFlIGy?utm_source=generator&theme=0",
+        "iframeTitle": "Player oficial do Spotify de EMIDE - Coming for You"
+      }
+    ]
   },
   "en": {
     "title": "SPOTIFY",
     "subtitle": "Official artist embed to highlight the profile and let listeners jump into Spotify through the platform's native interface.",
-    "platformLabel": "Latest release",
+    "platformLabel": "Tracks selection",
     "linkLabel": "Open on Spotify",
-    "profileUrl": "https://open.spotify.com/track/6Fw1GQ8f5bQ8CyVghFlIGy?si=HyGyVOz_Sg-DHm_B7RTc8w",
-    "embedUrl": "https://open.spotify.com/embed/track/6Fw1GQ8f5bQ8CyVghFlIGy?utm_source=generator&theme=0",
-    "iframeTitle": "Official Spotify player for EMIDE"
+    "tracks": [
+      {
+        "title": "Vendetta",
+        "profileUrl": "https://open.spotify.com/intl-pt/track/2ybj9JdCt6FQuvMAS4Ulf9?si=effc808de08d4a81",
+        "embedUrl": "https://open.spotify.com/embed/track/2ybj9JdCt6FQuvMAS4Ulf9?utm_source=generator&theme=0",
+        "iframeTitle": "Official Spotify player for EMIDE - Vendetta"
+      },
+      {
+        "title": "Moog",
+        "profileUrl": "https://open.spotify.com/intl-pt/track/7qQEuNXbSdVFuiEOXqP7P2?si=92f4bf8036c24637",
+        "embedUrl": "https://open.spotify.com/embed/track/7qQEuNXbSdVFuiEOXqP7P2?utm_source=generator&theme=0",
+        "iframeTitle": "Official Spotify player for EMIDE - Moog"
+      },
+      {
+        "title": "Coming for You",
+        "profileUrl": "https://open.spotify.com/track/6Fw1GQ8f5bQ8CyVghFlIGy?si=HyGyVOz_Sg-DHm_B7RTc8w",
+        "embedUrl": "https://open.spotify.com/embed/track/6Fw1GQ8f5bQ8CyVghFlIGy?utm_source=generator&theme=0",
+        "iframeTitle": "Official Spotify player for EMIDE - Coming for You"
+      }
+    ]
   }
 }
