@@ -49,8 +49,6 @@ export function HeroSection() {
             width={1080}
           />
         </div>
-
-        <div className={styles.scrollCue} aria-hidden="true" />
       </div>
     </section>
   );
