@@ -22,7 +22,6 @@ export function HeroSection() {
           />
         </h1>
         <p className={styles.description}>{copy.description}</p>
-
       </div>
 
       <div className={styles.visualShell}>
@@ -38,6 +37,7 @@ export function HeroSection() {
             width={1024}
           />
         </div>
+
         <div className={styles.mobileTitle}>
           <img
             alt={copy.title}
@@ -49,6 +49,8 @@ export function HeroSection() {
             width={1080}
           />
         </div>
+
+        <div className={styles.scrollCue} aria-hidden="true" />
       </div>
     </section>
   );
